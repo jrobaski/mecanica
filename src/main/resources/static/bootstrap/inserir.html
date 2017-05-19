@@ -12,10 +12,8 @@
 
 <script type="application/x-javascript">
 	
-	
-				
+					
 	 addEventListener("load", function() {setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } 
-
 
 
 </script>
@@ -125,79 +123,100 @@
 
 		<form>
 			<div class="form-group">
-				<label for="exampleInputEmail1">Email address</label> <input
-					type="email" class="form-control" id="exampleInputEmail1"
-					aria-describedby="emailHelp" placeholder="Enter email"> <small
-					id="emailHelp" class="form-text text-muted">We'll never
-					share your email with anyone else.</small>
+				<label for="inputCod">Código do fabricante</label> <input
+					type="text" class="form-control" id="cod"
+					aria-describedby="codHelp"
+					placeholder="Entre com o código do fabricante">
 			</div>
+
 			<div class="form-group">
-				<label for="exampleInputPassword1">Password</label> <input
-					type="password" class="form-control" id="exampleInputPassword1"
-					placeholder="Password">
+				<label for="inputFab">Nome do fabricante</label> <input type="text"
+					class="form-control" id="fab" aria-describedby="fabHelp"
+					placeholder="Entre com o nome do fabricante">
 			</div>
+			
 			<div class="form-group">
-				<label for="exampleSelect1">Example select</label> <select
-					class="form-control" id="exampleSelect1">
-					<option>1</option>
-					<option>2</option>
-					<option>3</option>
-					<option>4</option>
-					<option>5</option>
+				<label for="inputFab">Modelo do veículo</label> <input type="text"
+					class="form-control" id="mod" aria-describedby="modHelp"
+					placeholder="Entre com o modelo do veículo">
+			</div>
+			
+			<div class="form-group">
+				<label for="inputAno">Ano de fabricação</label> <input type="text"
+					class="form-control" id="ano" aria-describedby="anoHelp"
+					placeholder="Entre com o ano de fabricação do veículo">
+			</div>
+
+			<div class="form-group">
+				<label for="inputDesc">Descrição da peça</label> <input type="text"
+					class="form-control" id="desc" aria-describedby="descHelp"
+					placeholder="Entre com a descrição completa da peça">
+			</div>
+
+			<div class="form-group">
+				<label for="selectComp">Composição</label> <select
+					class="form-control" id="selectComp">
+					<option>Unidade</option>
+					<option>Par</option>
+					<option>Jogo</option>
 				</select>
 			</div>
+
 			<div class="form-group">
-				<label for="exampleSelect2">Example multiple select</label> <select
-					multiple class="form-control" id="exampleSelect2">
-					<option>1</option>
-					<option>2</option>
-					<option>3</option>
-					<option>4</option>
-					<option>5</option>
-				</select>
+				<label for="inputLoc">Localização da peça</label> <input type="text"
+					class="form-control" id="loc" aria-describedby="locHelp"
+					placeholder="Entre com a localização fisica da peça">
 			</div>
+
 			<div class="form-group">
-				<label for="exampleTextarea">Example textarea</label>
-				<textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+				<label for="inputForn">Fornecedor da peça</label> <input type="text"
+					class="form-control" id="forn" aria-describedby="fornHelp"
+					placeholder="Entre com o fornecedor da peça">
 			</div>
+
 			<div class="form-group">
-				<label for="exampleInputFile">File input</label> <input type="file"
-					class="form-control-file" id="exampleInputFile"
-					aria-describedby="fileHelp"> <small id="fileHelp"
-					class="form-text text-muted">This is some placeholder
-					block-level help text for the above input. It's a bit lighter and
-					easily wraps to a new line.</small>
+				<label for="inputVal">Valor da peça</label> <input type="text"
+					class="form-control" id="val" aria-describedby="valHelp"
+					placeholder="Entre com o valor da peça">
 			</div>
-			<fieldset class="form-group">
-				<legend>Radio buttons</legend>
-				<div class="form-check">
-					<label class="form-check-label"> <input type="radio"
-						class="form-check-input" name="optionsRadios" id="optionsRadios1"
-						value="option1" checked> Option one is this and
-						that&mdash;be sure to include why it's great
-					</label>
-				</div>
-				<div class="form-check">
-					<label class="form-check-label"> <input type="radio"
-						class="form-check-input" name="optionsRadios" id="optionsRadios2"
-						value="option2"> Option two can be something else and
-						selecting it will deselect option one
-					</label>
-				</div>
-				<div class="form-check disabled">
-					<label class="form-check-label"> <input type="radio"
-						class="form-check-input" name="optionsRadios" id="optionsRadios3"
-						value="option3" disabled> Option three is disabled
-					</label>
-				</div>
-			</fieldset>
-			<div class="form-check">
-				<label class="form-check-label"> <input type="checkbox"
-					class="form-check-input"> Check me out
-				</label>
+
+			<div class="form-group">
+				<label for="inputQuant">Quantidade de peças</label> <input
+					type="text" class="form-control" id="quant"
+					aria-describedby="quantHelp"
+					placeholder="Entre com a quantidade de peças adquiridas do fornecedor">
 			</div>
-			<button type="submit" class="btn btn-primary">Submit</button>
+
+<!-- 			<button type="submit" class="btn btn-primary">Inserir</button> -->
+
+			<!-- Trigger the modal with a button -->
+			<button type="button" class="btn btn-success" data-toggle="modal"
+				data-target="#modalInserir">Inserir</button>
+				
 		</form>
+
+		<!-- Modal -->
+		<div class="modal fade" id="modalInserir" role="dialog">
+			<div class="modal-dialog">
+
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h3 class="modal-title">Inserir peça</h3>
+					</div>
+					<div class="modal-body">
+						<h3 class="text-danger">A peça foi inserida com sucesso!</h3>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-success" data-dismiss="modal">Sair</button>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<br>
 
 	</div>
 

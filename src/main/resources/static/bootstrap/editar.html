@@ -12,7 +12,7 @@
 
 <script type="application/x-javascript">
 	
-				
+					
 	 addEventListener("load", function() {setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } 
 
 
@@ -120,7 +120,97 @@
 
 		<h2>Editar peça</h2>
 		<hr>
-		
+
+		<form>
+			<div class="form-group">
+				<label for="inputCod">Código do fabricante</label> <input
+					type="text" class="form-control" id="cod"
+					aria-describedby="codHelp"
+					placeholder="20002">
+			</div>
+
+			<div class="form-group">
+				<label for="inputFab">Nome do fabricante</label> <input type="text"
+					class="form-control" id="fab" aria-describedby="fabHelp"
+					placeholder="Wolkswagem">
+			</div>
+			
+			<div class="form-group">
+				<label for="inputFab">Modelo do veículo</label> <input type="text"
+					class="form-control" id="mod" aria-describedby="modHelp"
+					placeholder="Gol">
+			</div>
+
+			<div class="form-group">
+				<label for="inputDesc">Descrição da peça</label> <input type="text"
+					class="form-control" id="desc" aria-describedby="descHelp"
+					placeholder="Entre com a descrição completa da peça">
+			</div>
+
+			<div class="form-group">
+				<label for="selectComp">Composição</label> <select
+					class="form-control" id="selectComp">
+					<option>Unidade</option>
+					<option>Par</option>
+					<option>Jogo</option>
+				</select>
+			</div>
+
+			<div class="form-group">
+				<label for="inputLoc">Localização da peça</label> <input type="text"
+					class="form-control" id="loc" aria-describedby="locHelp"
+					placeholder="Entre com a localização fisica da peça">
+			</div>
+
+			<div class="form-group">
+				<label for="inputForn">Fornecedor da peça</label> <input type="text"
+					class="form-control" id="forn" aria-describedby="fornHelp"
+					placeholder="Entre com o fornecedor da peça">
+			</div>
+
+			<div class="form-group">
+				<label for="inputVal">Valor da peça</label> <input type="text"
+					class="form-control" id="val" aria-describedby="valHelp"
+					placeholder="Entre com o valor da peça">
+			</div>
+
+			<div class="form-group">
+				<label for="inputQuant">Quantidade de peças</label> <input
+					type="text" class="form-control" id="quant"
+					aria-describedby="quantHelp"
+					placeholder="Entre com a quantidade de peças adquiridas do fornecedor">
+			</div>
+
+<!-- 			<button type="submit" class="btn btn-primary">Inserir</button> -->
+
+			<!-- Trigger the modal with a button -->
+			<button type="button" class="btn btn-success" data-toggle="modal"
+				data-target="#modalInserir">Inserir</button>
+				
+		</form>
+
+		<!-- Modal -->
+		<div class="modal fade" id="modalInserir" role="dialog">
+			<div class="modal-dialog">
+
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h3 class="modal-title">Inserir peça</h3>
+					</div>
+					<div class="modal-body">
+						<h3 class="text-danger">A peça foi inserida com sucesso!</h3>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-success" data-dismiss="modal">Sair</button>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<br>
 
 	</div>
 
