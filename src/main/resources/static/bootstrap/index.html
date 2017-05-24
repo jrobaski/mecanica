@@ -23,11 +23,6 @@
 <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
 <!--coustom css-->
 <link href="css/style.css" rel="stylesheet" type="text/css" />
-<!--default-js-->
-<script src="js/jquery-2.1.4.min.js"></script>
-<!--bootstrap-js-->
-<script src="js/bootstrap.min.js"></script>
-<script src="js/interBra.js"></script>
 
 </head>
 
@@ -81,18 +76,6 @@
 							Login
 					</a></li>
 					<div class="clearfix">
-						<!--script-->
-						<script type="text/javascript">
-							jQuery(document).ready(function($) {
-								$(".scroll").click(function(event) {
-									event.preventDefault();
-									$('html,body').animate({
-										scrollTop : $(this.hash).offset().top
-									}, 900);
-								});
-							});
-						</script>
-						<!--script-->
 				</ul>
 			</div>
 			<!-- /.navbar-collapse -->
@@ -177,7 +160,7 @@
 	<!-- over -->
 	<div class="over">
 		<div class="container">
-			<div class="col-md-8 over-left">
+			<div class="col-md-12 over-left">
 				<h3>Experiência em reparação</h3>
 				<P>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
 					diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
@@ -186,72 +169,56 @@
 					consequat. Duis autem vel eum iriure dolor in hendrerit in
 					vulputate velit esse molestie consequat.</p>
 			</div>
-			<div class="col-md-4 over-right">
-				<div class="testimonials">
-					<h3>Testemunhos</h3>
-					<!-- FlexSlider -->
-					<section class="slider">
-						<div class="flexslider">
-							<ul class="slides">
-								<li>
-									<div class="tes">
-										<p>Lorem ipsum dolor sit amet, consectetuer adipiscing
-											elit, sed diam nonummy nibh euismod tincidunt ut laoreet
-											dolore magna aliquam erat volutpatt wisi enim ad minim
-											veniam, quis</p>
-										<h5>João</h5>
-									</div>
-								</li>
-								<li>
-									<div class="tes">
-										<p>consectetuer adipiscing elit, sed diam nonummy nibh
-											euismod tincidunt ut laoreet dolore magna aliquam erat
-											volutpatt wisi enim ad minim veniam, quis nostrud exerci
-											tation ullamco</p>
-										<h5>Maria</h5>
-									</div>
-								</li>
-								<li>
-									<div class="tes">
-										<p>sed diam nonummy nibh euismod tincidunt ut laoreet
-											dolore magna aliquam erat volutpatt wisi enim ad minim
-											veniam, quis nostrud exerci tation ullamco rper suscipit
-											lobortis nisl ut</p>
-										<h5>José</h5>
-									</div>
-								</li>
-								<li>
-									<div class="tes">
-										<p>consectetuer adipiscing elit, sed diam nonummy nibh
-											euismod tincidunt ut laoreet dolore magna aliquam erat
-											volutpatt wisi enim ad minim veniam, quis nostrud exerci
-											tation ullamc</p>
-										<h5>Ricardo</h5>
-									</div>
-								</li>
-							</ul>
-						</div>
-					</section>
+<!-- 			<div class="col-md-4 over-right"> -->
+<!-- 				<div class="testimonials"> -->
+<!-- 					<h3>Testemunhos</h3> -->
+<!-- 					FlexSlider -->
+<!-- 					<section class="slider"> -->
+<!-- 						<div class="flexslider"> -->
+<!-- 							<ul class="slides"> -->
+<!-- 								<li> -->
+<!-- 									<div class="tes"> -->
+<!-- 										<p>Lorem ipsum dolor sit amet, consectetuer adipiscing -->
+<!-- 											elit, sed diam nonummy nibh euismod tincidunt ut laoreet -->
+<!-- 											dolore magna aliquam erat volutpatt wisi enim ad minim -->
+<!-- 											veniam, quis</p> -->
+<!-- 										<h5>João</h5> -->
+<!-- 									</div> -->
+<!-- 								</li> -->
+<!-- 								<li> -->
+<!-- 									<div class="tes"> -->
+<!-- 										<p>consectetuer adipiscing elit, sed diam nonummy nibh -->
+<!-- 											euismod tincidunt ut laoreet dolore magna aliquam erat -->
+<!-- 											volutpatt wisi enim ad minim veniam, quis nostrud exerci -->
+<!-- 											tation ullamco</p> -->
+<!-- 										<h5>Maria</h5> -->
+<!-- 									</div> -->
+<!-- 								</li> -->
+<!-- 								<li> -->
+<!-- 									<div class="tes"> -->
+<!-- 										<p>sed diam nonummy nibh euismod tincidunt ut laoreet -->
+<!-- 											dolore magna aliquam erat volutpatt wisi enim ad minim -->
+<!-- 											veniam, quis nostrud exerci tation ullamco rper suscipit -->
+<!-- 											lobortis nisl ut</p> -->
+<!-- 										<h5>José</h5> -->
+<!-- 									</div> -->
+<!-- 								</li> -->
+<!-- 								<li> -->
+<!-- 									<div class="tes"> -->
+<!-- 										<p>consectetuer adipiscing elit, sed diam nonummy nibh -->
+<!-- 											euismod tincidunt ut laoreet dolore magna aliquam erat -->
+<!-- 											volutpatt wisi enim ad minim veniam, quis nostrud exerci -->
+<!-- 											tation ullamc</p> -->
+<!-- 										<h5>Ricardo</h5> -->
+<!-- 									</div> -->
+<!-- 								</li> -->
+<!-- 							</ul> -->
+<!-- 						</div> -->
+<!-- 					</section> -->
 
-					<!-- FlexSlider -->
-					<script defer="" src="js/jquery.flexslider.js"></script>
-					<script type="text/javascript">
-						$(function() {
-							SyntaxHighlighter.all();
-						});
-						$(window).load(function() {
-							$('.flexslider').flexslider({
-								animation : "slide",
-								start : function(slider) {
-									$('body').removeClass('loading');
-								}
-							});
-						});
-					</script>
-					<!-- FlexSlider -->
 
-				</div>
-			</div>
+<!-- 				</div> -->
+<!-- 			</div> -->
 			<div class="clearfix"></div>
 		</div>
 	</div>
@@ -340,6 +307,40 @@
 			</div>
 		</div>
 	</div>
+
+	<!--default-js-->
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<!--bootstrap-js-->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- FlexSlider -->
+	<script src="js/jquery.flexslider.js"></script>
+<!-- 	<script type="text/javascript"> -->
+// 						$(function() {
+// 							SyntaxHighlighter.all();
+// 						});
+// 						$(window).load(function() {
+// 							$('.flexslider').flexslider({
+// 								animation : "slide",
+// 								start : function(slider) {
+// 									$('body').removeClass('loading');
+// 								}
+// 							});
+// 						});
+<!-- 					</script> -->
+<!-- 	<!-- FlexSlider --> -->
+	<!--script-->
+	<script type="text/javascript">
+							jQuery(document).ready(function($) {
+								$(".scroll").click(function(event) {
+									event.preventDefault();
+									$('html,body').animate({
+										scrollTop : $(this.hash).offset().top
+									}, 900);
+								});
+							});
+						</script>
+	<!--script-->
+
 
 </body>
 

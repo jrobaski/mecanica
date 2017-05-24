@@ -10,7 +10,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="" />
 
-<script type="application/x-javascript">		
+<script type="application/x-javascript">			
 	 addEventListener("load", function() {setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } 
 </script>
 
@@ -21,10 +21,6 @@
 <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
 <!--coustom css-->
 <link href="css/style.css" rel="stylesheet" type="text/css" />
-<!--default-js-->
-<script src="js/jquery-2.1.4.min.js"></script>
-<!--bootstrap-js-->
-<script src="js/bootstrap.min.js"></script>
 
 </head>
 
@@ -77,18 +73,6 @@
 							Login
 					</a></li>
 					<div class="clearfix">
-						<!--script-->
-						<script type="text/javascript">
-							jQuery(document).ready(function($) {
-								$(".scroll").click(function(event) {
-									event.preventDefault();
-									$('html,body').animate({
-										scrollTop : $(this.hash).offset().top
-									}, 900);
-								});
-							});
-						</script>
-						<!--script-->
 				</ul>
 			</div>
 			<!-- /.navbar-collapse -->
@@ -113,7 +97,8 @@
 						<label for="inputPassword" class="sr-only">Senha</label> <input
 							type="password" name="senha" class="form-control"
 							placeholder="Digite a Senha" required> <br />
-						<button class="btn btn-lg btn-primary btn-block" type="submit" onclick="window.location.href='/bootstrap/estoque.html'" >Entrar</button>
+						<button class="btn btn-lg btn-primary btn-block" type="submit"
+							onclick="window.location.href='/bootstrap/estoque.html'">Entrar</button>
 					</div>
 				</form>
 
@@ -161,11 +146,27 @@
 	<!-- footer -->
 
 	<!-- Javascript -->
-	<script src="assets/js/jquery-1.11.1.min.js"></script>
-	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
-	<script src="assets/js/jquery.backstretch.min.js"></script>
-	<script src="assets/js/scripts.js"></script>
-	
+	<!--default-js-->
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<!--bootstrap-js-->
+	<script src="js/bootstrap.min.js"></script>
+<!-- 	<script src="js/jquery-1.11.1.min.js"></script> -->
+	<script src="js/bootstrap.min.js"></script>
+<!-- 	<script src="js/jquery.backstretch.min.js"></script> -->
+<!-- 	<script src="js/scripts.js"></script> -->
+	<!--script-->
+	<script type="text/javascript">
+							jQuery(document).ready(function($) {
+								$(".scroll").click(function(event) {
+									event.preventDefault();
+									$('html,body').animate({
+										scrollTop : $(this.hash).offset().top
+									}, 900);
+								});
+							});
+						</script>
+	<!--script-->
+
 </body>
 
 </html>
