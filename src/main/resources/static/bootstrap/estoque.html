@@ -11,10 +11,8 @@
 <meta name="keywords" content="" />
 
 <script type="application/x-javascript">
-	
-						
+							
 	 addEventListener("load", function() {setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } 
-
 
 </script>
 
@@ -100,7 +98,7 @@
 
 		<h2>Controle de estoque</h2>
 		<hr>
-		<a href="inserir.html"><button type="button"
+		<a id="inserir" href="inserir.html"><button type="button"
 				class="btn btn-success">Inserir peça</button> <br> <br>
 
 			<table class="table table-condensed" id="example" class="display"
@@ -151,14 +149,14 @@
 						<td>Ancora</td>
 						<td>780,00</td>
 						<td>4</td>
-						<td><a href="visualizar.html">
+						<td><a id="visualizar" href="visualizar.html">
 								<button type='button' class='btn btn-sm btn-primary'>Visualizar</button>
-						</a> <a href="editar.html">
+						</a> <a id="editar" href="editar.html">
 								<button type='button' class='btn btn-sm btn-warning'>Editar</button>
 						</a> <!-- Trigger the modal with a button -->
-							<button type="button" class="btn btn-sm btn-danger"
+							<a id="apagar"><button type="button" class="btn btn-sm btn-danger"
 								data-dismiss="modal" data-toggle="modalApgar"
-								data-target="#modalApagar">Apagar</button></td>
+								data-target="#modalApagar">Apagar</button></a></td>
 
 					</tr>
 					<tr>
@@ -379,20 +377,20 @@
 	</div>
 	</div>
 
-<!-- 	<script type="text/javascript"> -->
-// 		// For demo to fit into DataTables site builder...
-// 		$('#example').removeClass('display').addClass(
-// 				'table table-striped table-bordered');
-<!-- 	</script> -->
+	<!-- 	<script type="text/javascript"> -->
+	// // For demo to fit into DataTables site builder... //
+	$('#example').removeClass('display').addClass( // 'table table-striped
+	table-bordered');
+	<!-- 	</script> -->
 	<!-- Javascript -->
-<!-- 	<script src="js/jquery-1.11.1.min.js"></script> -->
-<!-- 	<script src="js/bootstrap.min.js"></script> -->
-<!-- 	<script src="js/jquery.backstretch.min.js"></script> -->
-<!-- 	<script src="js/scripts.js"></script> -->
+	<!-- 	<script src="js/jquery-1.11.1.min.js"></script> -->
+	<!-- 	<script src="js/bootstrap.min.js"></script> -->
+	<!-- 	<script src="js/jquery.backstretch.min.js"></script> -->
+	<!-- 	<script src="js/scripts.js"></script> -->
 	<!-- js -->
-<!-- 	<script src="js/jquery-2.1.4.min.js"></script> -->
+	<!-- 	<script src="js/jquery-2.1.4.min.js"></script> -->
 	<script src="js/jquery-3.2.1.js"></script>
-<!-- 	<script src="js/bootstrap.min.js"></script> -->
+	<!-- 	<script src="js/bootstrap.min.js"></script> -->
 	<script src="js/bootstrap.js"></script>
 	<script src="js/datatables.min.js"></script>
 	<script type="text/javascript" charset="utf-8">
