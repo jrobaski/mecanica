@@ -10,8 +10,10 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="" />
 
-<script type="application/x-javascript">					
+<script type="application/x-javascript">
+						
 	 addEventListener("load", function() {setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } 
+
 </script>
 
 <!meta charset utf="8">
@@ -121,8 +123,7 @@
 			<div class="form-group">
 				<label for="inputCod">Código do fabricante</label> <input
 					type="text" class="form-control" id="cod"
-					aria-describedby="codHelp"
-					placeholder="20002">
+					aria-describedby="codHelp" placeholder="20002">
 			</div>
 
 			<div class="form-group">
@@ -130,7 +131,7 @@
 					class="form-control" id="fab" aria-describedby="fabHelp"
 					placeholder="Wolkswagem">
 			</div>
-			
+
 			<div class="form-group">
 				<label for="inputFab">Modelo do veículo</label> <input type="text"
 					class="form-control" id="mod" aria-describedby="modHelp"
@@ -173,16 +174,15 @@
 			<div class="form-group">
 				<label for="inputQuant">Quantidade de peças</label> <input
 					type="text" class="form-control" id="quant"
-					aria-describedby="quantHelp"
-					placeholder="4">
+					aria-describedby="quantHelp" placeholder="4">
 			</div>
 
-<!-- 			<button type="submit" class="btn btn-primary">Inserir</button> -->
+			<!-- 			<button type="submit" class="btn btn-primary">Inserir</button> -->
 
 			<!-- Trigger the modal with a button -->
-			<a id="salvar"><button type="button" class="btn btn-success" data-toggle="modal"
-				data-target="#modalInserir">Salvar</button></a>
-				
+			<a id="salvar"><button type="button" class="btn btn-success"
+					data-toggle="modal" data-target="#modalInserir">Salvar</button></a>
+
 		</form>
 
 		<!-- Modal -->
@@ -199,8 +199,9 @@
 						<h3 class="text-danger">A peça foi alterada com sucesso!</h3>
 					</div>
 					<div class="modal-footer">
-<!-- 					<button type="button" class="btn btn-success" data-dismiss="modal">Sair</button> -->
-						<a href="estoque.html"><button type="button" class="btn btn-success">Sair</button>
+						<!-- 					<button type="button" class="btn btn-success" data-dismiss="modal">Sair</button> -->
+						<a id="salvar" href="estoque.html"><button type="button"
+								class="btn btn-success">Sair</button>
 					</div>
 				</div>
 

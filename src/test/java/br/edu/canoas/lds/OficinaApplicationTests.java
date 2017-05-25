@@ -25,15 +25,14 @@ public class OficinaApplicationTests extends FluentTest {
 	}
 	
 	@Test
-	public void internacionalizationTeste() {
+	public void internacionalizacaoTeste() {
 		goTo(getUrl("index"));
 		assertThat(window().title()).isEqualTo("Reparação automotiva JR");
 		$("#ukIndex").click();
 		assertThat($("#ukTxt")).hasText("CAR REPAIR JR");
 		$("#brIndex").click();
 		assertThat($("#brTxt")).hasText("REPARAÇÃO AUTOMOTIVA JR");		
-	}
-	
+	}	
 
 	@Test
 	public void loginTeste() {
@@ -45,7 +44,7 @@ public class OficinaApplicationTests extends FluentTest {
 	}
 	
 	@Test
-	public void estoqueTeste() {
+	public void inserirTeste() {
 		goTo(getUrl("estoque"));
 		assertThat(window().title()).isEqualTo("Reparação automotiva JR");
 		$("#inserir").click();
@@ -60,6 +59,7 @@ public class OficinaApplicationTests extends FluentTest {
 		$("#valor").fill().with("1234,56");
 		$("#quantidade").fill().with("11");
 		$("#inserir").click();
+//		$("#sair").click();
 	}
 	
 	@Test
@@ -87,38 +87,17 @@ public class OficinaApplicationTests extends FluentTest {
 		assertThat(window().title()).isEqualTo("Reparação automotiva JR");
 		$("#editar").click();
 		assertThat(window().title()).isEqualTo("Reparação automotiva JR");
-//		assertThat($("#codigo").text()).contains("20002");
-//		assertThat($("#fabricante").text()).contains("Wolkswagem");
-//		assertThat($("#modelo").text()).contains("Gol");
-//		assertThat($("#fabricacao").text()).contains("2001");
-//		assertThat($("#descricao").text()).contains("Amortecedor");
-//		assertThat($("#composicao").text()).contains("Par");
-//		assertThat($("#posicao").text()).contains("C2");
-//		assertThat($("#fornecedor").text()).contains("Ancora");
-//		assertThat($("#valor").text()).contains("780,00");
-//		assertThat($("#quantidade").text()).contains("4");		
-		$("#salvar").click();
+		
+//		assertThat($("#cod").text()).contains("20002");
+//			
+//		$("#salvar").click();
 	}
 	
 	@Test
 	public void apagarTeste() {
 		goTo(getUrl("estoque"));
 		assertThat(window().title()).isEqualTo("Reparação automotiva JR");
-		$("#apagar").click();
-//		assertThat(window().title()).isEqualTo("Reparação automotiva JR");
-//		assertThat($("#codigo").text()).contains("20002");
-//		assertThat($("#fabricante").text()).contains("Wolkswagem");
-//		assertThat($("#modelo").text()).contains("Gol");
-//		assertThat($("#fabricacao").text()).contains("2001");
-//		assertThat($("#descricao").text()).contains("Amortecedor");
-//		assertThat($("#composicao").text()).contains("Par");
-//		assertThat($("#posicao").text()).contains("C2");
-//		assertThat($("#fornecedor").text()).contains("Ancora");
-//		assertThat($("#valor").text()).contains("780,00");
-//		assertThat($("#quantidade").text()).contains("4");		
-		
-	}
-	
-	
+		$("#apagar").click();		
+	}	
 
 }
