@@ -87,16 +87,16 @@
 			<div class="banner-info">
 
 				<!-- Login -->
-				<form class="form-signin" method="POST" action="valida_login.php">
+				<form class="form-signin" method="POST" action="">
 					<h2 class="form-signin-heading">Login</h2>
 					<br />
 					<div class="col-sm-6 col-sm-offset-3">
 						<label for="inputEmail" class="sr-only">Usuário</label> <input id="usuario"
 							type="text" name="usuario" class="form-control"
-							placeholder="Digite o Usuário" required autofocus> <br />
+							placeholder="Digite o Usuário" required=" " oninvalid="this.setCustomValidity('Usuário obrigatório')"> <br />
 						<label for="inputPassword" class="sr-only">Senha</label> <input id="senha"
 							type="password" name="senha" class="form-control"
-							placeholder="Digite a Senha" required> <br />
+							placeholder="Digite a Senha" required=" " oninvalid="this.setCustomValidity('Senha obrigatória')"> <br />
 						<button id="entrar" class="btn btn-lg btn-primary btn-block" type="submit"
 							onclick="window.location.href='/bootstrap/estoque.html'">Entrar</button>
 					</div>
